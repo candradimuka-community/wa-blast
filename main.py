@@ -1,5 +1,6 @@
 import pywhatkit
 from datetime import datetime, timedelta
+import time
 
 def send_msg(no, time_now):
 
@@ -18,3 +19,4 @@ if __name__=="__main__":
     ]
     for d in data: 
         send_msg(d,datetime.now() + timedelta(minutes=2))
+        time.sleep(60)
